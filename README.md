@@ -66,20 +66,34 @@ Most AI tools pretend the model has no limitations. This one makes them part of 
 
 ## Installation
 
-### Claude Code
+### Claude Code (recommended)
 
-```bash
-# Clone
-git clone https://github.com/X-Arc-ai/design-discipline.git
+Inside Claude Code, run:
 
-# Copy skill to your project
-cp -r design-discipline/skills/design-discipline/ .claude/skills/design-discipline/
-
-# Copy command (enables /design)
-cp design-discipline/commands/design.md .claude/commands/design.md
+```
+/plugin marketplace add X-Arc-ai/design-discipline
+/plugin install design-discipline@x-arc
 ```
 
-Then run `/design [what to build]` in Claude Code.
+Then run `/design [what to build]`.
+
+To share with your team, install at project scope so the plugin is committed via `.claude/settings.json`:
+
+```
+/plugin install design-discipline@x-arc --scope project
+```
+
+### Claude Code (manual install)
+
+If you'd rather not use the plugin system:
+
+```bash
+git clone https://github.com/X-Arc-ai/design-discipline.git
+cp -r design-discipline/skills/design-discipline ~/.claude/skills/
+cp design-discipline/commands/design.md ~/.claude/commands/design.md
+```
+
+Then run `/design [what to build]`.
 
 ### Other AI Agents
 

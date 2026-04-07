@@ -1,0 +1,21 @@
+{
+  "name": "design-discipline",
+  "version": "0.1.0",
+  "description": "5-phase design process with guardrails and adversarial verification for AI-generated visual design output (websites, slides, dashboards, marketing material).",
+  "author": {
+    "name": "X-Arc-ai",
+    "url": "https://x-arc.ai"
+  },
+  "homepage": "https://github.com/X-Arc-ai/design-discipline",
+  "repository": "https://github.com/X-Arc-ai/design-discipline",
+  "license": "Apache-2.0",
+  "keywords": [
+    "design",
+    "verification",
+    "guardrails",
+    "ui",
+    "ux",
+    "visual",
+    "frontend"
+  ]
+}

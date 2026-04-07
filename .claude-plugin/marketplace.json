@@ -1,0 +1,19 @@
+{
+  "name": "x-arc",
+  "owner": {
+    "name": "X-Arc-ai",
+    "email": "hello@x-arc.ai"
+  },
+  "metadata": {
+    "description": "Plugins from X-Arc-ai. AI agents that ship real work."
+  },
+  "plugins": [
+    {
+      "name": "design-discipline",
+      "source": "./",
+      "description": "5-phase design process with guardrails and adversarial verification for AI-generated visual design output (websites, slides, dashboards, marketing material).",
+      "category": "development",
+      "tags": ["design", "verification", "ui", "ux", "visual", "frontend"]
+    }
+  ]
+}
