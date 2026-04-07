@@ -9,7 +9,7 @@ This protocol compensates for the model's inability to see rendered output nativ
 After building, BEFORE any fixes:
 
 ```
-1. Open browser via Playwright CLI (`playwright-cli open <url>`)
+1. Open the output in a browser (navigate to the URL)
 2. Screenshot at desktop (1440px) -- full page + individual sections
 3. Screenshot at tablet (768px) -- full page
 4. Screenshot at mobile (375px) -- full page
@@ -101,7 +101,7 @@ After the critique is complete:
 4. Write a SHORT re-assessment: "Fixed X. Before: [problem]. After: [result]."
 5. If new issues emerged from fixes, add them and continue
 6. Repeat until the critique comes back clean
-7. Clean up verification screenshots from `.playwright-cli/`
+7. Clean up any verification screenshots
 8. THEN proceed to Phase 5
 ```
 
@@ -127,8 +127,7 @@ Use these as a LENS for the adversarial critique, not as a checkbox to tick "pas
 ## Screenshot Management
 
 - **Verification screenshots are ephemeral.** They exist only for the critique loop.
-- Playwright CLI saves screenshots to `.playwright-cli/` (already gitignored).
-- After verification completes successfully, clean up verification screenshots from `.playwright-cli/`.
+- After verification completes successfully, clean up any verification screenshots.
 - **Exception:** If the user explicitly asks to see a screenshot or save one, keep it and save to the location they specify. Don't clean up requested screenshots.
 
 ## For Non-Renderable Output
@@ -140,19 +139,19 @@ When the output can't be opened in a browser (terminal UI concepts, email text, 
 3. Fix and re-assess
 4. Document the critique and resolution
 
-## Alternative Verification Tools
+## Verification Tools
 
-This protocol is written for Playwright CLI (`playwright-cli`) but works with any tool that can:
+This protocol works with any tool that can:
 1. Open a URL in a headless browser
 2. Resize the viewport
 3. Take a full-page screenshot
 4. Execute JavaScript in the page context
 
-**Alternatives:**
+**The protocol matters more than the tool.** The adversarial framing, intent comparison, and severity grading are what make verification work. The screenshot tool is just the mechanism.
+
+**Common tools:**
+- **Playwright MCP** (Claude Code default) -- `mcp__playwright__browser_navigate`, `mcp__playwright__browser_resize`, `mcp__playwright__browser_take_screenshot`, `mcp__playwright__browser_evaluate`
 - **Puppeteer** -- `npx puppeteer screenshot <url>` (Node.js)
 - **Manual browser** -- Open DevTools, use device toolbar for viewport sizes, take screenshots manually
-- **Any MCP browser tool** -- If your agent has browser access via MCP, use that for screenshots and JS evaluation
 
 The programmatic layout checks (JavaScript snippets in Phase 4A) work in any browser console. Copy-paste them into DevTools if you don't have automated browser access.
-
-**The protocol matters more than the tool.** The adversarial framing, intent comparison, and severity grading are what make verification work. The screenshot tool is just the mechanism.

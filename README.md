@@ -87,7 +87,7 @@ The skill files are markdown. Paste the content of `SKILL.md` + the three refere
 
 ### Verification (Recommended)
 
-The verification protocol uses [Playwright CLI](https://github.com/anthropics/playwright-cli) for automated screenshots and layout checks. Without it, the skill still works -- you just verify manually (open in browser, resize, inspect). See `reference/verification.md` for alternative tools.
+The verification protocol requires a tool that can take automated screenshots and run JavaScript in a browser. The most common option for Claude Code users is the **Playwright MCP server** (provides `mcp__playwright__*` tools). Without automated browser access, the skill still works -- you just verify manually (open in browser, resize, inspect). See `reference/verification.md` for supported tools.
 
 ---
 

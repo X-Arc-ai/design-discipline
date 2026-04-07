@@ -13,7 +13,7 @@ If you use this skill and get feedback that rejects a pattern, add it:
 |---|---|---|---|
 | [What was wrong] | [The actual feedback, raw] | [When] | [Which mediums] |
 
-3. Submit a PR with the quote and context.
+3. Submit a PR with the quote and context. **Always include the year** in the Date column (e.g., `Feb 26, 2025`).
 
 **Keep the quotes raw.** "It sucks" is more useful than "the visual approach was not well-received." Specificity and honesty are what make the guardrails work.
 

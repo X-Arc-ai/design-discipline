@@ -1,7 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 260">
   <defs>
     <style>
-      @import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;700&amp;display=swap');
       .bg { fill: #0a0a0b; }
       .chrome-bg { fill: #161618; }
       .dot-red { fill: #ff5f56; }

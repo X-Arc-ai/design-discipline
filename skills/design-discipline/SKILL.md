@@ -57,7 +57,7 @@ Full protocol: [reference/verification.md](reference/verification.md)
 
 **Phase 4A: Adversarial Critique** (BEFORE any fixes)
 1. Screenshot at all breakpoints (1440px, 768px, 375px) + section detail shots
-2. Run programmatic layout checks via `playwright-cli eval` (containment, overflow, effect visibility)
+2. Run programmatic layout checks via JavaScript evaluation in the browser (containment, overflow, effect visibility)
 3. Write a brutal critique: "What would a design lead reject?" Be specific and spatial, not vague.
 4. Intent comparison table: for each major design element, what did the brief intend vs what does the screenshot show?
 5. Grade each finding: CRITICAL / MAJOR / MINOR
@@ -92,6 +92,8 @@ Always start from the top. Only drop to lower levels when higher ones genuinely 
 6. **Bad:** Decorative illustration with no informational content
 
 ## References
+
+All reference paths below are relative to this skill's directory (e.g., `.claude/skills/design-discipline/` after installation).
 
 - **Guardrails (hard rules):** [reference/guardrails.md](reference/guardrails.md)
 - **Verification protocol:** [reference/verification.md](reference/verification.md)
