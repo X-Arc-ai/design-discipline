@@ -7,18 +7,18 @@
       .dot-yellow { fill: #ffbd2e; }
       .dot-green { fill: #27c93f; }
       .brand { fill: #4ade80; font-family: 'Fira Code', 'JetBrains Mono', 'SF Mono', monospace; font-size: 36px; font-weight: 700; letter-spacing: 4px; }
-      .tagline { fill: #555555; font-family: 'Fira Code', 'JetBrains Mono', 'SF Mono', monospace; font-size: 12px; }
-      .cursor { fill: #4ade80; opacity: 0.8; }
-      .xarc { fill: #333338; font-family: 'Fira Code', 'JetBrains Mono', 'SF Mono', monospace; font-size: 11px; }
-      .cmd { fill: #888888; font-family: 'Fira Code', 'JetBrains Mono', 'SF Mono', monospace; font-size: 11px; }
+      .tagline { fill: #888888; font-family: 'Fira Code', 'JetBrains Mono', 'SF Mono', monospace; font-size: 12px; }
+      .cursor { fill: #4ade80; opacity: 0.9; }
+      .xarc { fill: #444448; font-family: 'Fira Code', 'JetBrains Mono', 'SF Mono', monospace; font-size: 11px; }
+      .cmd { fill: #aaaaaa; font-family: 'Fira Code', 'JetBrains Mono', 'SF Mono', monospace; font-size: 11px; }
       .prompt { fill: #4ade80; font-family: 'Fira Code', 'JetBrains Mono', 'SF Mono', monospace; font-size: 11px; }
       .phase-label { fill: #4ade80; font-family: 'Fira Code', 'JetBrains Mono', 'SF Mono', monospace; font-size: 10px; font-weight: 700; }
-      .phase-text { fill: #666666; font-family: 'Fira Code', 'JetBrains Mono', 'SF Mono', monospace; font-size: 10px; }
+      .phase-text { fill: #888888; font-family: 'Fira Code', 'JetBrains Mono', 'SF Mono', monospace; font-size: 10px; }
       .critique { fill: #e57373; font-family: 'Fira Code', 'JetBrains Mono', 'SF Mono', monospace; font-size: 10px; }
       .severity { fill: #ff5f56; font-family: 'Fira Code', 'JetBrains Mono', 'SF Mono', monospace; font-size: 10px; font-weight: 700; }
       .fixed { fill: #27c93f; font-family: 'Fira Code', 'JetBrains Mono', 'SF Mono', monospace; font-size: 10px; }
       .result { fill: #4ade80; font-family: 'Fira Code', 'JetBrains Mono', 'SF Mono', monospace; font-size: 11px; font-weight: 700; }
-      .dim { fill: #444444; font-family: 'Fira Code', 'JetBrains Mono', 'SF Mono', monospace; font-size: 10px; }
+      .dim { fill: #777777; font-family: 'Fira Code', 'JetBrains Mono', 'SF Mono', monospace; font-size: 10px; }
     </style>
   </defs>
 
